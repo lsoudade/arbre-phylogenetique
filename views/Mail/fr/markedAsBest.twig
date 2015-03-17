@@ -1,0 +1,10 @@
+{% extends "Mail/fr/layout.twig" %}
+
+{% block content %}
+    Bonjour, <br /><br />
+    Votre réponse à la question : <br /><br />
+    <strong>{{ data.question_title }}</strong><br /><br />
+    A été approuvée par l'auteur.<br /><br />
+    Cliquez sur le lien ci-dessous pour vous rendre sur la page de la question <br />
+    <a href="{{ url('question_show', { 'id': data.question_id, 'slug': data.question_slug } ) }}">{{ url('question_show', { 'id': data.question_id, 'slug': data.question_slug } ) }}</a>
+{% endblock %}

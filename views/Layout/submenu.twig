@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-md-8 hidden-xs visible-sm visible-md visible-lg">
+        <div class="btn-group-submenu-large btn-group-justified">
+            <div class="btn-group">
+                <a class="btn btn-default" href="{{ path('question_latest') }}">{{ 'submenu.last_questions'|trans }}</a>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-default" href="{{ path('question_popular') }}">{{ 'submenu.popular_questions'|trans }}</a>
+            </div>
+            <div class="btn-group">
+                <a class="btn btn-default" href="{{ path('question_no_answer') }}">{{ 'submenu.unanswered_questions'|trans }}</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-8 visible-xs hidden-sm hidden-md hidden-lg">
+        <div class="btn-group-xs btn-group-justified">
+            <a class="btn btn-default" href="{{ path('question_latest') }}">{{ 'submenu.last_questions'|trans }}</a>
+            <a class="btn btn-default" href="{{ path('question_popular') }}">{{ 'submenu.popular_questions'|trans }}</a>
+            <a class="btn btn-default" href="{{ path('question_no_answer') }}">{{ 'submenu.unanswered_questions'|trans }}</a>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="btn-group-submenu-large btn-group-justified">
+            <div class="btn-group">
+                <a class="btn btn-success" href="{{ path('question_create') }}">{{ 'submenu.ask_question'|trans }}</a>
+            </div>
+        </div>
+    </div>
+</div>

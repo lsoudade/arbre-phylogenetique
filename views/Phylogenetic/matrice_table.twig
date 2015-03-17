@@ -1,0 +1,22 @@
+<table class="table table-bordered table-matrice">
+    <thead>
+        <tr>
+            <th class="taxa">{{ 'matrice.table_entries'|trans }}</th>
+            {% for i in 1..matrice.1.values|length %}
+                <th>C{{ i }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for i,entry in matrice %}
+            <tr>
+                <td><input type="text" value="{{ entry.taxa }}" class="matrice-taxa-name" data-url="{{ path('save_matrice_taxa_name', { 'number':i}) }}" /></td>
+                {% for j,character in entry.values %}
+                    <td>
+                        <input type="text" value="{{ character }}" class="matrice-case" data-url="{{ path('save_matrice_case', { 'taxa':i, 'character':j }) }}" />
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Arbre phylogénétique en ligne{% endblock %}</title>
+        <meta name="description" content="{% block meta_description %}Outil de création d'arbre phylogénétique en ligne{% endblock %}" />
+        <link rel="shortcut icon" href="/img/favicon.png"/>
+        <link href='//fonts.googleapis.com/css?family=Lobster|Architects+Daughter|Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        {% block css %}
+            <link rel="stylesheet" href="/vendor/bootstrap-3.1.1/css/bootstrap.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+        {% endblock %}
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+        {% block javascript_head %}{% endblock %}
+    </head>
+    <body>
+        <div class="navbar navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <i data-target=".navbar-collapse" data-toggle="collapse" class="fa fa-chevron-down navbar-toggle collapsed"></i>
+                    <a class="navbar-brand" href="{{ path('homepage') }}">Arbre</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Créer un arbre phylogénétique</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div class="container theme-showcase main-container" role="main">
+{#            {% include 'Layout/googleAnalytics.twig' %}#}
+            
+            {% include 'Layout/flash.twig' %}
+            
+            {% block content %}{% endblock %}
+        </div> <!-- /container -->
+        
+        {% include 'Layout/footer.twig' %}
+
+        {% block javascript %}
+            <script src="/vendor/jquery-1.11.1.min.js"></script>
+            <script src="/vendor/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+            <script src="/js/main.js"></script>
+        {% endblock %}
+    </body>
+</html>

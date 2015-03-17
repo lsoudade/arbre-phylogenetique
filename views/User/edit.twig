@@ -1,0 +1,49 @@
+{% extends "Layout/main.twig" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Niveau {{ level.level }}</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="progress progress-striped no-margin">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{ level.percentage }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ level.percentage }}%">
+                            <span class="sr-only">{{ level.percentage }}%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="user-edit">
+                <div class="form-group form-group-user-email">
+                    <label>Adresse email</label>
+                    <input type="text" value="{{ user.getExtraField('email') }}" class="form-control" readonly="true" />
+                    <a class="btn btn-default" href="{{ path('user_edit_email') }}">Modifier</a>
+                </div>
+            </form>
+
+            <form class="user-edit">
+                <div class="form-group form-group-user-username">
+                    <label>Nom d'utilisateur</label>
+                    <input type="text" value="{{ user.getExtraField('username') }}" class="form-control" readonly="true" />
+                    <a class="btn btn-default" href="{{ path('user_edit_username') }}">Modifier</a>
+                </div>
+            </form>
+
+            <form class="user-edit">
+                <div class="form-group form-group-user-password">
+                    <label>Mot de passe</label>
+                    <input type="text" value="******" class="form-control" readonly="true" />
+                    <a class="btn btn-default" href="{{ path('user_edit_password') }}">Modifier</a>
+                </div>
+            </form>
+        </div>
+        
+        <div class="col-md-4">
+            {% include 'Question/newButton.twig' %}
+            {% include 'Layout/ad.twig' %}
+        </div>
+    </div>
+{% endblock %}

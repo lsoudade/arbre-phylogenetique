@@ -1,0 +1,10 @@
+{% include "Phylogenetic/progression.twig" %}
+
+<div class="container-matrice">
+    {% include "Phylogenetic/matrice_table.twig" %}
+</div>
+
+<a class="btn btn-default matrice-button-action matrice-add-column" href="{{ path('matrice_add_character') }}">{{ 'matrice.button.add.column'|trans }}</a>
+<a class="btn btn-default matrice-button-action matrice-add-row" href="{{ path('matrice_add_taxa') }}">{{ 'matrice.button.add.row'|trans }}</a>
+<a class="btn btn-large btn-success pull-right matrice-button-action matrice-next-step-distances">{{ 'matrice.button.generate.distances'|trans }}</a>
+<a class="btn btn-large btn-danger pull-right matrice-button-action matrice-reset" href="{{ path('matrice_reset') }}">{{ 'matrice.button.reset'|trans }}</a>

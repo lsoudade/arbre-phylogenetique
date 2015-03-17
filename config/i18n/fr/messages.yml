@@ -1,0 +1,51 @@
+matrice.button.add.column: Ajouter un caractère
+matrice.button.add.row: Ajouter un taxa
+matrice.button.generate.distances: Générer la matrice de distances
+matrice.button.reset: Réinitialiser
+matrice.table_entries: Taxa / Caractère
+
+authentication.lost_password.error.text: Une erreur est survenue durant la réinitialisation de votre mot de passe
+authentication.lost_password.success.text: Saisissez votre nouveau mot de passe
+authentication.lost_password.text: Vous avez perdu votre mot de passe ?
+authentication.lost_password.submit: Envoyer
+form.account.email.success: Votre email a été changé avec succès, merci de vous reconnecter.
+form.account.password.success: Votre mot de passe a été changé avec succès
+form.account.username.success: Votre nom d'utilisateur a été changé avec succès
+form.answer.content: Votre réponse
+form.answer.submit: Poster la réponse
+form.answer.success: Votre réponse a bien été postée
+form.error.email.exists: Cet email est déjà utilisé
+form.error.email_not_found: Cet email n'existe pas
+form.error.passwords_length: Mot de passe trop court
+form.error.passwords_not_match: Mots de passe non identiques
+form.error.question.exists: Cette question a déjà été posée
+form.error.question.title.maxlength: La question est limitée à 255 caractères
+form.error.rules.unchecked: Vous devez accepter les conditions générales d'utilisation
+form.error.username.exists: Ce nom d'utilisateur existe déjà
+form.error.username.min: Nom d'utilisateur trop court
+form.lost_password.email: Saisissez votre email
+form.lost_password.new_password: Nouveau mot de passe
+form.lost_password.new_password_again: Confirmation du mot de passe
+form.lost_password.success: Vous allez recevoir un email vous permettant de réinitialiser votre mot de passe
+form.new_password.success: Votre mot de passe a été changé avec succès
+form.question.content: Détails de votre question
+form.question.submit: Soumettre la question
+form.question.success: Votre question a bien été postée
+form.question.title: Votre question
+form.signin.email: Email
+form.signin.lost_password: Mot de passe oublié
+form.signin.password: Mot de passe
+form.signin.submit: Se connecter
+form.signup.email: Votre email
+form.signup.password: Votre mot de passe
+form.signup.password_confirmation: Confirmation du mot de passe
+form.signup.submit: S'inscrire
+form.signup.success: Votre compte a été créé avec succès
+form.signup.rules: J'accepte les <a href="/terms-of-service" target="blank">conditions générales d'utilisation</a>
+form.signup.username: Nom d'utilisateur
+mail.signup.object: Bienvenue
+mail.lost_password.object: Réinitialisation de votre mot de passe
+menu.homepage: Accueil
+menu.signin: Connexion
+menu.signout: Déconnexion
+menu.signup: Inscription

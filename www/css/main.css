@@ -1,0 +1,246 @@
+/*
+#B1221C
+*/
+
+html, body {
+    background:#F1F1F1;
+}
+
+.main-container {
+    padding-top:120px;
+}
+
+.content-bg {
+    background:#FFF;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+a ,
+a:focus ,
+a:hover ,
+a:active {
+    color:#B1221C;
+}
+
+h1, h2 a , h2 a:hover, h2 a:focus {
+    color:#333;
+}
+
+form {
+    background:#FFF;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.navbar {
+    min-height: 62px;
+    box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.25);
+    background:#FFF;
+}
+
+.navbar-brand , 
+.navbar-brand:hover ,
+.navbar-brand:focus {
+    font-size:46px;
+    font-family: 'Covered By Your Grace', cursive;
+    font-weight:bold;
+    color:#B1221C;
+    text-decoration:none;
+    line-height:normal;
+    padding:0 0 0 15px;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav > li > a {
+    line-height: 32px;
+    color:#333;
+    text-transform:uppercase;
+    font-weight:bold;
+    background:#EEE;
+}
+
+.navbar-nav > li > a:hover ,
+.navbar-nav > li > a:focus {
+    background:#DDD;
+}
+
+.navbar-toggle {
+    cursor:pointer;
+    font-size:20px;
+}
+
+.btn-create {
+    width:100%;
+    line-height:40px;
+    margin:0 0 20px;
+    font-size:16px;
+}
+
+.no-margin {
+    margin:0px;
+}
+
+.footer {
+    text-align:center;
+    background:#333;
+    margin-top:40px;
+    width:100%;
+}
+
+.footer ul , 
+.footer ul li {
+    margin:0px;
+    padding:0px;
+}
+
+.footer ul {
+    list-style:none;
+    overflow:hidden;
+    display:inline-block;
+    margin:0px auto;
+}
+
+.footer ul li {
+    float:left;
+}
+
+.footer ul li ,
+.footer ul li a ,
+.footer ul li a:focus ,
+.footer ul li a:hover ,
+.footer ul li a:active {
+    color:#FFF;
+    font-size:11px;
+    line-height:26px;
+}
+
+.footer ul li {
+    margin-right:14px;
+}
+
+.alert {
+    padding:8px !important;
+}
+
+.close {
+    line-height:0.8 !important;
+}
+
+ul.form-errors,
+ul.form-errors li {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul.form-errors li {
+  color: red;
+  font-size: 13.5px;
+  margin-bottom: 10px;
+}
+
+#form_enabled {
+    margin-left:10px;
+    position:relative;
+    top:3px;
+}
+
+.btn-group-submenu-large {
+    margin-bottom:30px;
+}
+
+.btn-group-submenu-large a {
+    border:0px;
+    color:#47A447;
+    color:#333;
+    font-size:16px;
+    line-height:40px;
+}
+
+.btn-group-submenu-large a.btn-success {
+    color:#FFF;
+}
+
+.btn-group-xs {
+    margin-bottom:16px;
+}
+
+.border-question-0 ,
+.border-question-1 {
+    border-left:solid 10px;
+    border-color:#B1221C;
+}
+
+.border-question-1 {
+    border-color:#FF5B2B;
+}
+
+.border-default {
+    border-left:solid 10px;
+    border-color:#cccccc;
+}
+
+.border-success {
+    border-left:solid 10px;
+    border-color:#47A447;
+}
+
+.philogenetic-progression ,
+.philogenetic-progression li {
+    margin:0;
+    padding:0;
+}
+
+.philogenetic-progression {
+    list-style:none;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.philogenetic-progression li {
+    float:left;
+    margin-right:20px;
+}
+
+.philogenetic-progression li a {
+    padding:20px 30px 20px 20px;
+    color:#FFF;
+    background:#EC971F;
+    -webkit-border-top-right-radius: 50px;
+    -moz-border-radius-topright: 50px;
+    border-top-right-radius: 50px;
+    display:block;
+}
+
+.philogenetic-progression li a.active {
+    background:#449D44;
+}
+
+.table-matrice {
+    
+}
+
+.table-matrice thead th {
+    background:#444 !important;
+    color:#FFF !important;
+}
+
+.table-matrice tbody td {
+    padding:0 0 0 8px !important;
+    background:#FFF !important;
+}
+
+.table-matrice th input ,
+.table-matrice td input {
+    display:block;
+    border:0;
+    outline:0;
+    width:98%;
+}
+
+a.matrice-reset {
+    margin-right:5px;
+}

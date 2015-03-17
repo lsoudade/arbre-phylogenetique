@@ -1,0 +1,30 @@
+{% extends "Layout/main.twig" %}
+
+{% block title %}
+   Quizz - Mentions légales
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title">Mentions légales</h3>
+                </div>
+                <div class="panel-body">
+                    <p>Statut du propriétaire : Particulier</p>
+                    <p>Hébergeur : OVH SAS 2, rue Kellermann 59100 ROUBAIX FRANCE</p>
+                    <p>
+                        <i class="fa fa-envelope"></i>&nbsp;
+                        <a href="{{ path('contact') }}">Contacter le propriétaire</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            {% include 'Question/newButton.twig' %}
+            {% include 'Layout/ad.twig' %}
+        </div>
+    </div>
+{% endblock %}

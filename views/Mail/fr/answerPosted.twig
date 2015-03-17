@@ -1,0 +1,9 @@
+{% extends "Mail/fr/layout.twig" %}
+
+{% block content %}
+    Bonjour, <br /><br />
+    {{ data.username }} a répondu à votre question : <br /><br />
+    <strong>{{ data.title }}</strong><br /><br />
+    Cliquez sur le lien ci-dessous pour vous rendre sur la page de la question <br />
+    <a href="{{ url('question_show', { 'id': data.id, 'slug': data.slug } ) }}">{{ url('question_show', { 'id': data.id, 'slug': data.slug } ) }}</a>
+{% endblock %}
